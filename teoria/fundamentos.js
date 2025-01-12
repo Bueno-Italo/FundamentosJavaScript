@@ -32,6 +32,43 @@ console.log(typeof meuObjeto);
 console.log(typeof meuArray);
 console.log(typeof meuObmeuundefinedjeto);
 
+// === Operadores aritmeticos ===
+// Operadores aritméticos são usados para realizar cálculos matemáticos.
+
+let x = 10;
+const y = 5;
+
+console.log(typeof y);
+console.log(x, y);
+
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+
+// === Operadores de comparação ===
+
+console.log(x == y); // Igual
+console.log(x != y); // Diferente
+
+console.log("5" == 5);
+console.log("5" === 5);
+console.log("5" !== 5);
+
+// === Operadores lógicos
+// AND &&
+// OR ||
+console.log(10 > 5 && 20 > 5);
+
+
+
+
+
+
+
+
+
+
 // === Boas Práticas ===
 // 1. Use `let` e `const` em vez de `var`.
 // 2. Nomeie variáveis de forma descritiva e consistente.
