@@ -1,15 +1,38 @@
-// Exemplos de declaração de variáveis
+//  ========== Fundamentos de JavaScript ==========
+// Este arquivo contém exemplos e anotações sobre variáveis e tipos de dados.
 
-// var nome = "valor"
-var minhaVariavel = "Olá, mundo!"
+// === Declaração de Variáveis ===
+// Existem três formas de declarar variáveis em JavaScript:
+// 1. var: Declarações globais ou de escopo funcional (uso desencorajado).
+// 2. let: Escopo de bloco. Ideal para valores que podem mudar.
+// 3. const: Escopo de bloco. Ideal para valores constantes que não mudam.
 
-console.log(minhaVariavel)
+// Exemplos de declaração:
+var minhaVariavel = "Olá, mundo!" // Declaração com var
 
-const nome = "Italo";
-let idade = 31;
-var ativo = true;
+console.log(minhaVariavel) // Saída
 
-// Tipos de dados
-console.log(typeof nome);
-console.log(typeof idade);
-console.log(typeof ativo);
+const nome = "Italo"; // Constante (não pode ser reatribuida)
+let idade = 31;       // Pode ser alterada posteriormente
+var ativo = true;     // false
+
+// === Tipos de Dados ===
+// JavaScript é dinamicamente tipado. O tipo é atribuído com base no valor.
+// Principais tipos de dados:
+console.log(typeof nome); // string 
+console.log(typeof idade); // number
+console.log(typeof ativo); // boolean
+
+// Outros tipos:
+var meuObjeto = {}; // Objeto vazio
+var meuArray = []; // Array vazio
+var meuundefined = undefined; // undefined
+
+console.log(typeof meuObjeto);
+console.log(typeof meuArray);
+console.log(typeof meuObmeuundefinedjeto);
+
+// === Boas Práticas ===
+// 1. Use `let` e `const` em vez de `var`.
+// 2. Nomeie variáveis de forma descritiva e consistente.
+// 3. Evite misturar tipos de dados desnecessariamente.
