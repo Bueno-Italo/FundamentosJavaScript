@@ -32,7 +32,7 @@ console.log(typeof meuObjeto);
 console.log(typeof meuArray);
 console.log(typeof meuObmeuundefinedjeto);
 
-// === Operadores aritmeticos ===
+// === Operadores Aritmeticos ===
 // Operadores aritméticos são usados para realizar cálculos matemáticos.
 
 let x = 10;
@@ -46,7 +46,7 @@ console.log(x - y);
 console.log(x * y);
 console.log(x / y);
 
-// === Operadores de comparação ===
+// === Operadores de Comparação ===
 
 console.log(x == y); // Igual
 console.log(x != y); // Diferente
@@ -55,10 +55,38 @@ console.log("5" == 5);
 console.log("5" === 5);
 console.log("5" !== 5);
 
-// === Operadores lógicos
+// === Operadores Lógicos ===
 // AND &&
 // OR ||
-console.log(10 > 5 && 20 > 5);
+console.log(10 > 5 && 20 > 5); // true
+console.log(10 > 5 && 20 < 5); // false
+
+console.log(10 > 5 || 20 > 5); // true
+console.log(10 > 5 || 20 < 5); // true
+console.log(10 < 5 || 20 < 5); // || só irá retornar falso se as duas primicias forem falsas.
+
+// === Conversão de Tipos  
+const meuNumero2 = "123";
+
+console.log(meuNumero2);
+console.log(typeof meuNumero2);
+
+const meuNumeroConvetido = Number(meuNumero2); // Number irá conveter o tipo
+console.log(typeof meuNumeroConvetido);
+
+// === Estrutura de condição - if, else, else if ===
+
+const idade2 = 20
+
+if (idade2 > 18) {
+    console.log(`Você é maior de ${idade2} anos...`);
+} else {
+    console.log("Você é menor de idade!");
+}
+
+
+
+
 
 
 
