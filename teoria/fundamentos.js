@@ -71,7 +71,7 @@ const meuNumero2 = "123";
 console.log(meuNumero2);
 console.log(typeof meuNumero2);
 
-const meuNumeroConvetido = Number(meuNumero2); // Number irá conveter o tipo
+const meuNumeroConvetido = Number(meuNumero2); // Number irá converter o tipo
 console.log(typeof meuNumeroConvetido);
 
 // === Estrutura de condição - if, else, else if ===
@@ -84,7 +84,20 @@ if (idade2 > 18) {
     console.log("Você é menor de idade!");
 }
 
+// === Switch ===
+// O `switch` é usado para tomar decisões com base no valor de uma variável.
+// Ele compara o valor com diferentes casos usando `===` (comparação estrita).
 
+const fruta = "Banana"
+
+switch(fruta) {
+    case "Banana":
+        console.log("Banana é a fruta!")
+        break;
+    case "Maça":
+        console.log("Maçã é a fruta!")
+        break;
+};
 
 
 
