@@ -131,15 +131,33 @@ switch (diaDaSemana) {
         console.log("Valor inválido para dia da semana.");
 };
 
-// === Estruturas de Repetição ===
-// 1, 2, 3, 4, 5, 6... => dependendo de uma condição
+const usuario = "editor";
 
-// Estrutura -> contador, condição de limite, incremento
+switch (usuario) {
+    case "admin":
+        console.log("Bem-vindo, administrador!");
+        break;
+    case "editor":
+        console.log("Bem-vindo, editor!");
+        break;
+    default:
+        console.log("Bem-vindo, visitante!");
+}
+
+// === Estruturas de Repetição ===
+// Usadas para executar blocos de códigos repetidamente com base em uma condição.
+
+// === For ===
+// O `for` é usado quando sabemos exatamente quantas vezes o código deve ser repetido.
+// Estrutura: inicialização; condição; incremento/decremento.
 for(let i = 0; i < 5; i++) {
     console.log(`O valor de i é: ${i}`);
 }
 
-// While
+// === While ===
+// O `while` é usado quando a repetição depende de uma condição que pode variar dinamicamente.
+// Atenção: Certifique-se de que a condição será false em algum momento para evitar loops infinitos.
+
 let v = 0;
 
 while(v < 5) {
@@ -147,7 +165,22 @@ while(v < 5) {
     v++;
 }
 
+let a = 0;
+while (true) {
+    console.log(a);
+    a++;
+    if (a > 10) break; // Condição de parada
+}
 
+// === Do-While ===
+// O `do-while` é semelhante ao `while`, mas sempre executa o bloco pelo menos uma vez,
+// mesmo que a condição seja inicialmente falsa.
+let w = 0;
+
+do {
+    console.log(`O valor de w é : ${w}`);
+    w++;
+} while(w < 5);
 
 
 
