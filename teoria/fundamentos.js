@@ -92,13 +92,16 @@ const fruta = "Banana"
 
 switch(fruta) {
     case "Banana":
-        console.log("Banana é a fruta!")
+        console.log("Banana é a fruta!");
         break;
     case "Maça":
-        console.log("Maçã é a fruta!")
+        console.log("Maçã é a fruta!");
         break;
+    default:
+        console.log("Fruta não encontrada!");
 };
 
+// Exemplo 2: 
 const diaDaSemana = 3;
 
 switch (diaDaSemana) {
@@ -128,8 +131,21 @@ switch (diaDaSemana) {
         console.log("Valor inválido para dia da semana.");
 };
 
+// === Estruturas de Repetição ===
+// 1, 2, 3, 4, 5, 6... => dependendo de uma condição
 
+// Estrutura -> contador, condição de limite, incremento
+for(let i = 0; i < 5; i++) {
+    console.log(`O valor de i é: ${i}`);
+}
 
+// While
+let v = 0;
+
+while(v < 5) {
+    console.log(`O valor de v é: ${v}`);
+    v++;
+}
 
 
 
