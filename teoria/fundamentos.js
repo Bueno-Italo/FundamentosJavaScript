@@ -183,6 +183,30 @@ do {
 } while(w < 5);
 
 
+// === Funções ===
+// As funções são blocos de código reutilizáveis. Elas podem ser nomeadas ou anônimas.
+
+function cumprimentar(nome) {
+    console.log(`Olá, ${nome}`); // Uso do template literals
+}
+
+// Invocação = nome()
+cumprimentar("Italo");
+
+// Funções sem parametros 
+function mostrarMensgem () {
+    console.log("Bem vindo ao curso de JavaScript")
+}
+
+mostrarMensgem();
+
+// Função com múltiplos parâmetros
+function soma(a, b) {
+    return a + b;
+}
+
+console.log(soma(10,20));
+
 
 
 
