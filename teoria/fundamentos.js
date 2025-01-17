@@ -208,6 +208,28 @@ function soma(a, b) {
 console.log(soma(10,20));
 
 
+// === Arrow Function === 
+// Arrow Functions oferecem uma sintaxe mais curta para escrever funções.
+// Elas são úteis para funções curtas e callbacks, mas têm limitações em relação ao `this`.
+
+// Sintaxe básica
+const soma2 = (a, b) => a + b; // Equivalente a: function somar(a, b) { return a + b; }
+
+console.log(10 + 5);
+
+// Exemplo 2:
+const testeArrow = () => console.log("Isso também é uma função!");
+
+testeArrow();
+
+// Exemplo 3:
+// Funções com varias linhas precisam de chaves e palavra-chave `return`
+const calcularAreaRetangulo = (largura, altura) => {
+    const area = largura * altura;
+    return area;
+};
+
+console.log(calcularAreaRetangulo(5, 10));
 
 
 // === Boas Práticas ===
