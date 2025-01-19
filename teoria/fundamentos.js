@@ -231,7 +231,26 @@ const calcularAreaRetangulo = (largura, altura) => {
 
 console.log(calcularAreaRetangulo(5, 10));
 
-//1:03 H
+// === Array Listas ===
+// Um array é um conjunto de valores ordenados que voçê o referncia com um nome e um indice
+
+const numeros = [1, 2, 3, 4, 5];
+
+console.log(numeros);
+// Acessando a posição do array
+console.log(`A posição do array é: ${numeros[2]}`);
+
+// Colocando mais uma posição coma função push()
+numeros.push(6);
+
+console.log(numeros);
+
+// Removendo posição do array com a função pop()
+numeros.pop();
+
+console.log(numeros);
+
+
 // === Boas Práticas ===
 // 1. Use `let` e `const` em vez de `var`.
 // 2. Nomeie variáveis de forma descritiva e consistente.
