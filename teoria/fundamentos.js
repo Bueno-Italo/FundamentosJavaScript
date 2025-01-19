@@ -231,7 +231,7 @@ const calcularAreaRetangulo = (largura, altura) => {
 
 console.log(calcularAreaRetangulo(5, 10));
 
-
+//1:03 H
 // === Boas Práticas ===
 // 1. Use `let` e `const` em vez de `var`.
 // 2. Nomeie variáveis de forma descritiva e consistente.
