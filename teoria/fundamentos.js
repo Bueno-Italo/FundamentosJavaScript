@@ -250,6 +250,15 @@ numeros.pop();
 
 console.log(numeros);
 
+// === Data e Hora ===
+const data = Date();
+
+console.log(data);
+
+const natal = Date(2025, 11, 25);
+
+console.log(natal);
+
 
 // === Boas Práticas ===
 // 1. Use `let` e `const` em vez de `var`.
