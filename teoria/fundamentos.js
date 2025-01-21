@@ -251,13 +251,28 @@ numeros.pop();
 console.log(numeros);
 
 // === Data e Hora ===
-const data = Date();
+// O objeto Date permite trabalhar com datas e horas. É possível criar instâncias para representar o momento atual ou uma data específica.
+const data = Date(); // Instancia de data atual
 
 console.log(data);
 
-const natal = Date(2025, 11, 25);
+const natal = Date(2025, 11, 25); // Mês em JavaScript é indexado em 0 (0 = janeiro, 11 = dezembro)
 
 console.log(natal);
+
+// === Math ===
+// O objeto Math oferece várias funções e constantes matemáticas para cálculos.
+console.log(Math.PI);
+
+console.log(Math.round(3.6));
+
+// Raiz
+console.log(Math.sqrt(16));
+
+// Potencia
+console.log(Math.pow(2, 3));
+
+
 
 
 // === Boas Práticas ===
