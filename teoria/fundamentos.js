@@ -272,9 +272,6 @@ console.log(Math.sqrt(16));
 // Potencia
 console.log(Math.pow(2, 3));
 
-
-
-
 // === Boas Práticas ===
 // 1. Use `let` e `const` em vez de `var`.
 // 2. Nomeie variáveis de forma descritiva e consistente.
