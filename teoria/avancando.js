@@ -25,3 +25,31 @@ console.log("Primeiro número par encontrado:", numeroPar);
 // filter => Retorna todos os elementos que atendem ao critério fornecido
 const numerosPares = numeros.filter((num) => num % 2 === 0); // Filtra todos os números pares
 console.log("Todos os números pares:", numerosPares);
+
+
+// Manipulação de strings
+const frase = "        Olá, Mundo!   ";
+console.log(frase);
+
+// Utilizando o trim para remover os espaços da string
+const removeSpaço = frase.trim().split(" ");
+console.log(removeSpaço)
+
+// Callback => Função
+function cumprimentar(nome, Callback) {
+    console.log("Olá, " + nome);
+    Callback();
+}
+
+function mostrarSaudacao() {
+    console.log("como voce está?");
+}
+
+cumprimentar("italo", mostrarSaudacao);
+
+// Settimeout => depois de um tempo execulta algoo, uma vez;
+function mostrarMensagem() {
+    console.log("Essa mensgem irá aparecer após 3 segundos.");
+}
+
+setTimeout(mostrarMensagem, 3000);
