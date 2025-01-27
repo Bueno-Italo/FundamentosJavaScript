@@ -8,12 +8,12 @@ function areaTriangulo () {
 }
 areaTriangulo();
 
-// Implementação 02
+// === Implementação 02 ===
 function calcularAreaTriangulo() {
     const base = parseFloat(prompt("Digite a base do triângulo:"));
     const altura = parseFloat(prompt("Digite a altura do triângulo:"));
     
-    if (isNaN(base) || isNaN(altura) || base <=0 || altura <= 0) {
+    if (isNaN(base) || isNaN(altura) || base <= 0 || altura <= 0 ) {
         console.log("Por favor, insita valores numéricos validos e maiores que zero");
         return;
     }
@@ -23,3 +23,11 @@ function calcularAreaTriangulo() {
 }
 
 calcularAreaTriangulo();
+
+// === Usando arrow function ===
+ const calculaTriangulo = (base, altura) => (base * altura) / 2;
+
+ const base2 = 20;
+ const altura2 = 2;
+
+ console.log(`A area do trinângulo é: ${calculaTriangulo(base2, altura2)}`)
