@@ -53,3 +53,25 @@ function mostrarMensagem() {
 }
 
 setTimeout(mostrarMensagem, 3000);
+
+// JSON (JavaScript Object Notation)
+// É um formato leve de intercambio de dados utilizados para comunicação entre sistemas, especialmente em APIs;
+// Baseado na notação de objetos do JavaScript mas pode ser utilizado em outras linguagens.
+// Estruturas: composto por pares de chave-valor e pode conter Objeto({}), Arrays([]) e Valores Primitivos como strings, numeros, booleanos e null.
+
+/* {
+    "nome": "Italo",
+    "idade": 25,
+    "habilidades": ["JavaScript", "HTML", "CSS"],
+    "ativo": true,
+    "endereco": {
+      "cidade": "São Paulo",
+      "estado": "SP"
+    }
+}
+ */
+const objeto = {nome: "Italo", idade: 30};
+const jsonString = JSON.stringify(objeto);
+
+console.log(objeto);
+console.log(typeof objeto);
