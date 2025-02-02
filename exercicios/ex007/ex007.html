@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 07</title>
     <script src="ex007.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="ex007style.css"/>
 </head>
 <body>
     <div class="container">
         <h2>Avaliação de Notas!</h2>
+        <label for="numero">Informe a sua nota da prova: </label><br>
+        <input type="number" id="numero" required>
+        <br>
+        <button onclick="consultaNota()">Verificar</button>
+        <div class="mensagem" id="resultado"></div>
     </div>
 </body>
 </html>
