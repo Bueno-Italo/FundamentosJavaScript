@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="ex009.js" defer></script>
+        <title>Calcular de IMC</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel=  "stylesheet" href="ex009.css">
+    </head>
+    <body>
+        <div class="container">
+            <label for="peso">Digite o peso em KG:</label>
+            <input type="number" id="peso" step="0.1">
+
+            <label for="alt">Digite a sua altura em metros:</label>
+            <input type="number" id="alt" step="0.1">
+
+            <button onclick="calculaImc()">Calcular!</button>
+
+            <div id="resultado"></div>
+        </div>
+    </body>
+</html>
