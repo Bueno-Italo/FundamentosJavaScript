@@ -28,4 +28,38 @@ console.log(link);
 // Trocando o atributo pelo DOM
 link.setAttribute("href", "https://horadecodar.com.br/");
 
-console.log(link.getAnimations("href"));
+console.log(link.getAttribute("href"));
+
+// Manipulação de classes do CSS
+
+const elemento = document.querySelector("#meuId");
+
+element.classList.add("novaClasse");
+
+// Manipular o CSS
+const elemento3 = document.querySelector("#meuId");
+
+elemento3.style.color = "blue";
+
+// Navegação entre nós
+const elemento4 = document.querySelector("#meuInput");
+
+const pai = elemento4.parentNode; // retornar o pai do elemeto
+
+console.log(pai);
+
+// Obter o primeiro filho
+const primeiroFilho = pai.firstChild;
+
+console.log(primeiroFilho);
+
+// Manipulação de estrutura do DOM
+const novoElemento = document.createElement("div");
+
+console.log(novoElemento);
+
+novoElemento.textContent = "Minha div de JS";
+
+console.log(novoElemento);
+
+document.body.appendChild(novoElemento);
