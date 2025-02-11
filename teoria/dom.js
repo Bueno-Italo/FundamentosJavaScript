@@ -1,65 +1,63 @@
 // === DOM - Document Object Model ===
 
 // Selecionar elementos
+// Usando getElementById (retorna um único elemento)
 const elementoPorId = document.getElementById("meuId");
-
 console.log(elementoPorId);
 
+// Usando querySelector (mais flexível, suporta seletores CSS)
 const elementoPorId2 = document.querySelector("#meuId");
-
 console.log(elementoPorId2);
 
-// Manipular conteudo de texto
-
+// Manipular conteúdo de texto
 const element = document.querySelector("#meuId");
 
-console.log(element.textContent);
+console.log("Texto atual:", element.textContent);
 
+// Atualizando o texto do elemento após 1 segundo
 setTimeout(() => {
-    element.textContent = "Mudei o texto teste";
+  element.textContent = "Mudei o texto teste";
+  console.log("Texto alterado para:", element.textContent);
 }, 1000);
 
-
-// Trabalhando com atributos
+// === Trabalhando com atributos ===
 const link = document.querySelector("a");
-
-console.log(link);
+console.log("Atributo href atual:", link.getAttribute("href"));
 
 // Trocando o atributo pelo DOM
 link.setAttribute("href", "https://horadecodar.com.br/");
+console.log("Novo valor do atributo href:", link.getAttribute("href"));
 
-console.log(link.getAttribute("href"));
-
-// Manipulação de classes do CSS
-
+// === Manipulação de classes do CSS ===
 const elemento = document.querySelector("#meuId");
 
+// Adicionando uma nova classe CSS
 element.classList.add("novaClasse");
+console.log("Classe 'novaClasse' adicionada:", elemento.classList);
 
-// Manipular o CSS
+// === Manipular o CSS diretamente ===
 const elemento3 = document.querySelector("#meuId");
-
 elemento3.style.color = "blue";
+console.log("Cor alterada para azul");
 
-// Navegação entre nós
+// === Navegação entre nós ===
 const elemento4 = document.querySelector("#meuInput");
 
-const pai = elemento4.parentNode; // retornar o pai do elemeto
+// Retornar o nó pai do elemento
+const pai = elemento4.parentNode;
+console.log("Elemento pai:", pai);
 
-console.log(pai);
-
-// Obter o primeiro filho
+// Obter o primeiro filho do pai
 const primeiroFilho = pai.firstChild;
+console.log("Primeiro filho do pai:", primeiroFilho);
 
-console.log(primeiroFilho);
-
-// Manipulação de estrutura do DOM
+// === Manipulação de estrutura do DOM ===
 const novoElemento = document.createElement("div");
 
-console.log(novoElemento);
-
+// Definindo o conteúdo do novo elemento
 novoElemento.textContent = "Minha div de JS";
+console.log("Novo elemento criado:", novoElemento);
 
-console.log(novoElemento);
-
+// Inserindo o elemento na estrutura do DOM
 document.body.appendChild(novoElemento);
+console.log("Elemento adicionado ao body");
