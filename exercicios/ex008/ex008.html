@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ex008.css">
+        <script src="ex008.js" defer></script>
+        <title>Calculadora de Compra</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Calculadora de Compra</h2>
+            <label for="produto">Nome do Produto:</label>
+            <input type="text" id="produto" placeholder="Digite o nome do produto">
+
+            <label for="preco">Preço Unitário (R$):</label>
+            <input type="number" id="preco" placeholder="Digite o preço" step="0.01">
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" placeholder="Digite a quantidade" min="1">
+
+            <button onclick="calcularTotal()">Calcular</button>
+
+            <div id="resultado"></div>
+        </div>
+
+    </body>
+</html>
