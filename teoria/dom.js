@@ -61,3 +61,28 @@ console.log("Novo elemento criado:", novoElemento);
 // Inserindo o elemento na estrutura do DOM
 document.body.appendChild(novoElemento);
 console.log("Elemento adicionado ao body");
+
+// Eventos
+
+// Selecionando o evento especifio click
+const botao = document.querySelector("button");
+
+botao.addEventListener("click", function () {
+  console.log("botão clicado!");
+});
+
+// Mouse
+const elemento5 =  document.querySelector("#meuFormulario");
+
+elemento5.addEventListener("mouseover", function () {
+  console.log("O mouse passou aqui");
+});
+
+// Formulario
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function (event) {
+  // Validando o form com o preventDefault parando o carremanto da pagina
+  event.preventDefault();
+  console.log("form enviado");
+});
