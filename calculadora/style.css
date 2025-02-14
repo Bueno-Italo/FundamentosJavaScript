@@ -1,4 +1,10 @@
-h1 {
-    font-family:'Courier New', Courier, monospace;
-    color: blue;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* centralizar todo conteudo do body */
+    height: 100vh; /* preencher toda a altura da view */
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Arial;
 }
