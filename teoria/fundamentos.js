@@ -7,6 +7,25 @@
 // 2. let: Escopo de bloco. Ideal para valores que podem mudar.
 // 3. const: Escopo de bloco. Ideal para valores constantes que não mudam.
 
+//#region annotation data types
+
+    /*
+        Number ->  aritmeticos
+        String ->
+        Boolean -> comparações logicas
+        Empty Values -> null, undefined
+     */
+
+console.log(typeof 1);
+console.log(typeof 10);
+console.log(typeof 100);
+
+const name = 'Italo';
+console.log(typeof name);
+
+//#endregion
+
+
 // Exemplos de declaração:
 var minhaVariavel = "Olá, mundo!" // Declaração com var
 
