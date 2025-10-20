@@ -10,12 +10,17 @@
 //#region annotation data types
 
     /*
+         === Tipos de Dados ===
+        JavaScript é dinamicamente tipado. O tipo é atribuído com base no valor.
         Number ->  aritmeticos
         String ->
         Boolean -> comparações logicas
         Empty Values -> null, undefined
      */
 
+console.log(typeof nome); // string 
+console.log(typeof idade); // number
+console.log(typeof ativo); // boolean
 console.log(typeof 1);
 console.log(typeof 10);
 console.log(typeof 100);
@@ -35,12 +40,7 @@ const nome = "Italo"; // Constante (não pode ser reatribuida)
 let idade = 31;       // Pode ser alterada posteriormente
 var ativo = true;     // false
 
-// === Tipos de Dados ===
-// JavaScript é dinamicamente tipado. O tipo é atribuído com base no valor.
-// Principais tipos de dados:
-console.log(typeof nome); // string 
-console.log(typeof idade); // number
-console.log(typeof ativo); // boolean
+
 
 // Outros tipos:
 var meuObjeto = {}; // Objeto vazio
@@ -65,11 +65,13 @@ console.log(x - y);
 console.log(x * y);
 console.log(x / y);
 
-// === Operadores de Comparação ===
+
+//#region Booleans & logical operator
+
+    // === Operadores de Comparação ===
 
 console.log(x == y); // Igual
 console.log(x != y); // Diferente
-
 console.log("5" == 5);
 console.log("5" === 5);
 console.log("5" !== 5);
@@ -77,12 +79,17 @@ console.log("5" !== 5);
 // === Operadores Lógicos ===
 // AND &&
 // OR ||
+console.log(true && true); //true
+console.log(false || true); //false
 console.log(10 > 5 && 20 > 5); // true
 console.log(10 > 5 && 20 < 5); // false
-
 console.log(10 > 5 || 20 > 5); // true
 console.log(10 > 5 || 20 < 5); // true
 console.log(10 < 5 || 20 < 5); // || só irá retornar falso se as duas primicias forem falsas.
+
+//#endregion
+
+
 
 // === Conversão de Tipos  
 const meuNumero2 = "123";
