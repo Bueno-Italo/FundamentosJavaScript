@@ -1,15 +1,7 @@
 //  ========== Fundamentos de JavaScript ==========
-// Este arquivo contém exemplos e anotações sobre variáveis e tipos de dados.
-
-// === Declaração de Variáveis ===
-// Existem três formas de declarar variáveis em JavaScript:
-// 1. var: Declarações globais ou de escopo funcional (uso desencorajado).
-// 2. let: Escopo de bloco. Ideal para valores que podem mudar.
-// 3. const: Escopo de bloco. Ideal para valores constantes que não mudam.
 
 //#region annotation data types
-
-    /*
+/*
          === Tipos de Dados ===
         JavaScript é dinamicamente tipado. O tipo é atribuído com base no valor.
         Number ->  aritmeticos
@@ -18,29 +10,35 @@
         Empty Values -> null, undefined
      */
 
-console.log(typeof nome); // string 
+console.log(typeof nome); // string
 console.log(typeof idade); // number
 console.log(typeof ativo); // boolean
 console.log(typeof 1);
 console.log(typeof 10);
 console.log(typeof 100);
 
-const name = 'Italo';
+const name = "Italo";
 console.log(typeof name);
 
 //#endregion
 
+//#region annotation var types
+// === Declaração de Variáveis ===
+/*
+     Existem três formas de declarar variáveis em JavaScript:
+        Salvamos os valores em variáveis (statement) e depois podemos criar expressões com os valores salvos
+        1. var: Declarações globais ou de escopo funcional (uso desencorajado).
+        2. let: Escopo de bloco. Ideal para valores que podem mudar.
+        3. const: Escopo de bloco. Ideal para valores constantes que não mudam.
+    */
 
 // Exemplos de declaração:
-var minhaVariavel = "Olá, mundo!" // Declaração com var
-
-console.log(minhaVariavel) // Saída
+var minhaVariavel = "Olá, mundo!"; // Declaração com var
+console.log(minhaVariavel); // Saída
 
 const nome = "Italo"; // Constante (não pode ser reatribuida)
-let idade = 31;       // Pode ser alterada posteriormente
-var ativo = true;     // false
-
-
+let idade = 31; // Pode ser alterada posteriormente
+var ativo = true; // false
 
 // Outros tipos:
 var meuObjeto = {}; // Objeto vazio
@@ -51,6 +49,9 @@ console.log(typeof meuObjeto);
 console.log(typeof meuArray);
 console.log(typeof meuObmeuundefinedjeto);
 
+//#endregion
+
+//#region annotation Arithmetic Operator
 // === Operadores Aritmeticos ===
 // Operadores aritméticos são usados para realizar cálculos matemáticos.
 
@@ -64,11 +65,10 @@ console.log(x + y);
 console.log(x - y);
 console.log(x * y);
 console.log(x / y);
+//#endregion
 
-
-//#region Booleans & logical operator
-
-    // === Operadores de Comparação ===
+//#region Booleans & Operator Comparison
+// === Operadores de Comparação ===
 
 console.log(x == y); // Igual
 console.log(x != y); // Diferente
@@ -89,9 +89,47 @@ console.log(10 < 5 || 20 < 5); // || só irá retornar falso se as duas primicia
 
 //#endregion
 
+//#region function built in: prompt
+/*
+    Recebe um input do usuario do sistema e pode guardar esse valor; essa função é pouco usada
+    Ex: let idade = prompt('Qual a sua idade?')
+    console.log(idade);
+*/
+let nome = prompt("Qual o seu nome?");
+console.log(nome);
+
+let idade = prompt("Qual é a sua idade?");
+console.log(`Seu nome é ${nome} e sua idade é ${idade} anos.`);
+//#endregion
+
+//#region function built in: alert
+/*
+    Exibe uma mensagem na tela do usuário, função pouco utilizada.
+    Ex: alert('Veja esta mensagem')
+ */
+
+alert("Mensagem de alerta");
+
+//#endregion
+
+//#region function built in: Math
+/*
+    Função utilizada para espressões/cálculos matemáticos
+    Ex: let maiorNumero = Math.max(1,5,2,3);
+    console.log(maiorNumero)
+ */
+
+let maior = Math.max(15,7,99,4,39);
+console.log(maior);
+
+let menor = Math.max(15,7,99,4,39);
+console.log(menor);
+
+//#endregion
 
 
-// === Conversão de Tipos  
+
+// === Conversão de Tipos
 const meuNumero2 = "123";
 
 console.log(meuNumero2);
@@ -102,72 +140,72 @@ console.log(typeof meuNumeroConvetido);
 
 // === Estrutura de condição - if, else, else if ===
 
-const idade2 = 20
+const idade2 = 20;
 
 if (idade2 > 18) {
-    console.log(`Você é maior de ${idade2} anos...`);
+  console.log(`Você é maior de ${idade2} anos...`);
 } else {
-    console.log("Você é menor de idade!");
+  console.log("Você é menor de idade!");
 }
 
 // === Switch ===
 // O `switch` é usado para tomar decisões com base no valor de uma variável.
 // Ele compara o valor com diferentes casos usando `===` (comparação estrita).
 
-const fruta = "Banana"
+const fruta = "Banana";
 
-switch(fruta) {
-    case "Banana":
-        console.log("Banana é a fruta!");
-        break;
-    case "Maça":
-        console.log("Maçã é a fruta!");
-        break;
-    default:
-        console.log("Fruta não encontrada!");
-};
+switch (fruta) {
+  case "Banana":
+    console.log("Banana é a fruta!");
+    break;
+  case "Maça":
+    console.log("Maçã é a fruta!");
+    break;
+  default:
+    console.log("Fruta não encontrada!");
+}
 
-// Exemplo 2: 
+// Exemplo 2:
 const diaDaSemana = 3;
 
 switch (diaDaSemana) {
-    case 1:
-        console.log("Hoje é Domingo!");
-        break; // O `break` evita que os outros casos sejam executados.
-    case 2:
-        console.log("Hoje é Segunda-feira!");
-        break;
-    case 3:
-        console.log("Hoje é Terça-feira!");
-        break;
-    case 4:
-        console.log("Hoje é Quarta-feira!");
-        break;
-    case 5:
-        console.log("Hoje é Quinta-feira!");
-        break;
-    case 6:
-        console.log("Hoje é Sexta-feira!");
-        break;
-    case 7:
-        console.log("Hoje é Sábado!");
-        break;
-    default:
-        // O `default` é executado se nenhum caso corresponder.
-        console.log("Valor inválido para dia da semana.");
-};
+  case 1:
+    console.log("Hoje é Domingo!");
+    break; // O `break` evita que os outros casos sejam executados.
+  case 2:
+    console.log("Hoje é Segunda-feira!");
+    break;
+  case 3:
+    console.log("Hoje é Terça-feira!");
+    break;
+  case 4:
+    console.log("Hoje é Quarta-feira!");
+    break;
+  case 5:
+    console.log("Hoje é Quinta-feira!");
+    break;
+  case 6:
+    console.log("Hoje é Sexta-feira!");
+    break;
+  case 7:
+    console.log("Hoje é Sábado!");
+    break;
+  default:
+    // O `default` é executado se nenhum caso corresponder.
+    console.log("Valor inválido para dia da semana.");
+}
 
 const usuario = "editor";
 
 switch (usuario) {
-    case "admin":
-        console.log("Bem-vindo, administrador!");
-        break;
-    case "editor":
-        console.log("Bem-vindo, editor!");
-        break;
-    default:
-        console.log("Bem-vindo, visitante!");
+  case "admin":
+    console.log("Bem-vindo, administrador!");
+    break;
+  case "editor":
+    console.log("Bem-vindo, editor!");
+    break;
+  default:
+    console.log("Bem-vindo, visitante!");
 }
 
 // === Estruturas de Repetição ===
@@ -176,8 +214,8 @@ switch (usuario) {
 // === For ===
 // O `for` é usado quando sabemos exatamente quantas vezes o código deve ser repetido.
 // Estrutura: inicialização; condição; incremento/decremento.
-for(let i = 0; i < 5; i++) {
-    console.log(`O valor de i é: ${i}`);
+for (let i = 0; i < 5; i++) {
+  console.log(`O valor de i é: ${i}`);
 }
 
 // === While ===
@@ -186,16 +224,16 @@ for(let i = 0; i < 5; i++) {
 
 let v = 0;
 
-while(v < 5) {
-    console.log(`O valor de v é: ${v}`);
-    v++;
+while (v < 5) {
+  console.log(`O valor de v é: ${v}`);
+  v++;
 }
 
 let a = 0;
 while (true) {
-    console.log(a);
-    a++;
-    if (a > 10) break; // Condição de parada
+  console.log(a);
+  a++;
+  if (a > 10) break; // Condição de parada
 }
 
 // === Do-While ===
@@ -204,37 +242,35 @@ while (true) {
 let w = 0;
 
 do {
-    console.log(`O valor de w é : ${w}`);
-    w++;
-} while(w < 5);
-
+  console.log(`O valor de w é : ${w}`);
+  w++;
+} while (w < 5);
 
 // === Funções ===
 // As funções são blocos de código reutilizáveis. Elas podem ser nomeadas ou anônimas.
 
 function cumprimentar(nome) {
-    console.log(`Olá, ${nome}`); // Uso do template literals
+  console.log(`Olá, ${nome}`); // Uso do template literals
 }
 
 // Invocação = nome()
 cumprimentar("Italo");
 
-// Funções sem parametros 
-function mostrarMensgem () {
-    console.log("Bem vindo ao curso de JavaScript")
+// Funções sem parametros
+function mostrarMensgem() {
+  console.log("Bem vindo ao curso de JavaScript");
 }
 
 mostrarMensgem();
 
 // Função com múltiplos parâmetros
 function soma(a, b) {
-    return a + b;
+  return a + b;
 }
 
-console.log(soma(10,20));
+console.log(soma(10, 20));
 
-
-// === Arrow Function === 
+// === Arrow Function ===
 // Arrow Functions oferecem uma sintaxe mais curta para escrever funções.
 // Elas são úteis para funções curtas e callbacks, mas têm limitações em relação ao `this`.
 
@@ -251,8 +287,8 @@ testeArrow();
 // Exemplo 3:
 // Funções com varias linhas precisam de chaves e palavra-chave `return`
 const calcularAreaRetangulo = (largura, altura) => {
-    const area = largura * altura;
-    return area;
+  const area = largura * altura;
+  return area;
 };
 
 console.log(calcularAreaRetangulo(5, 10));
